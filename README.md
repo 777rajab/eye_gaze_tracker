@@ -6,7 +6,7 @@ The project lets you calibrate gaze points, train a regression model, and run re
 ---
 
 ## Features
-- **Calibration** with a fullscreen grid of points  
+- **Calibration** with a grid of points  
 - **Feature extraction** from eye landmarks using MediaPipe FaceMesh  
 - **Supervised training** with Ridge Regression  
 - **Real-time gaze prediction** with smoothing  
@@ -39,7 +39,7 @@ Dependencies (from [`requirements.txt`](requirements.txt)):
 From the project root:
 
 ```bash
-python run_gui.py
+py run_gui.py
 ```
 
 The GUI has 3 tabs:
@@ -57,7 +57,7 @@ Press **ESC** to stop calibration or real-time windows.
 **Calibration**
 
 ```bash
-python run_calibration.py
+py run_calibration.py
 ```
 
 This opens a calibration window and saves gaze samples to `data/calibration_samples.csv`.
@@ -65,7 +65,7 @@ This opens a calibration window and saves gaze samples to `data/calibration_samp
 **Training**
 
 ```bash
-python train.py
+py train.py
 ```
 
 This trains a Ridge regression model and saves it under `models/gaze_ridge_xy.joblib`.
@@ -73,7 +73,7 @@ This trains a Ridge regression model and saves it under `models/gaze_ridge_xy.jo
 **Realtime Inference**
 
 ```bash
-python run_realtime.py
+py run_realtime.py
 ```
 
 This opens a webcam feed with gaze predictions overlaid.
