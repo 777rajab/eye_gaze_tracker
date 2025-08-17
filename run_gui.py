@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple GUI wrapper for the Eye Gaze Tracker project.
-
-Place this file at: eye-gaze-tracker/run_gui.py
-Run with: python run_gui.py
+Basic GUI wrapper for the Eye Gaze Tracker project.
 
 It provides one window with three actions:
 1) Calibration  2) Train model  3) Realtime run
@@ -14,8 +11,6 @@ It calls into the existing project modules:
 - src.inference.run_realtime
 
 Notes:
-- Long-running tasks are executed on background threads so the UI stays responsive.
-- The "Stop Realtime" button toggles a flag that asks the realtime loop to exit.
 - If you get ImportErrors, be sure to `pip install -r requirements.txt` from the project root.
 """
 
